@@ -21,8 +21,18 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+/*Created by me*/
+.container{
+  padding: 0%;
+  border-style:solid black ;
+ /* background-color: cornflowerblue ;*/
+}
+/****/
+
+
 .description {
   white-space: pre-wrap;
+ 
 }
 
 .time-block {
@@ -41,6 +51,18 @@ textarea {
   color: #000000;
   border-top: 1px dashed #000000;
 }
+
+
+/*Created by me, not sure why I have col-8 in the HTML*/
+.col-2{
+  
+}
+
+.col-8 {
+
+}
+
+/*****/
 
 .past {
   background-color: #d3d3d3;
@@ -69,3 +91,4 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
