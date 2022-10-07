@@ -66,33 +66,12 @@ $("textarea").each(function () {
 })
 
 
-/*
-var SecondtRow = document.getElementById("10");
-firstRow.classList.add("future");
-var firstRow = document.getElementById("10");
-firstRow.classList.add("future");
-var firstRow = document.getElementById("11");
-firstRow.classList.add("future");
-var firstRow = document.getElementById("12");
-firstRow.classList.add("future");
-var firstRow = document.getElementById("13");
-firstRow.classList.add("future");
-var firstRow = document.getElementById("14");
-firstRow.classList.add("future");
-var firstRow = document.getElementById("15");
-firstRow.classList.add("future");
-var firstRow = document.getElementById("16");
-firstRow.classList.add("future");
-var firstRow = document.getElementById("17");
-firstRow.classList.add("future");
 
-
-*/
 
 
 
 //Using jQuery to change the background color of the elements of the list
-//$("textarea#list li:first").css(".present");
+
 
 
 
@@ -104,8 +83,17 @@ firstRow.classList.add("future");
 
 //WHEN I click the save button for that timeblock
 //THEN the text for that event is saved in local storage
+//function to execure what we tell it
 
 
+//$.fn.saveBtn=function(){
+  //  console.log("Hello World")
+//}
+
+$('.saveBtn').on('click', function () {
+       //This is where he have to save the text to LocalStorage         
+   console.log("Hello World!");
+}); 
 
 //WHEN I refresh the page
 //THEN the saved events persist
