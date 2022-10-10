@@ -76,7 +76,7 @@ $("textarea").each(function () {
 //10/Function to make sure everything loads properly on the document
 
 $(document).ready(function () {
-  
+
     //Target the id that will store the event /Get values of description in jQuery
 
     $('.saveBtn').on('click', function () {
@@ -93,8 +93,8 @@ $(document).ready(function () {
 
         console.log(time)
 
-const myData = localStorage.getItem(textArea);
-console.log(textArea);
+        const myData = localStorage.getItem(textArea);
+        console.log(textArea);
 
 
     })
@@ -111,7 +111,7 @@ console.log(textArea);
     $("#15 .description").val(localStorage.getItem("15"));
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
-    
+
 
 });
 
