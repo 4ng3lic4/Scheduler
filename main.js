@@ -91,14 +91,16 @@ $(document).ready(function(){
 //Target the id that will store the event /Get values of description in jQuery
 
     $('.saveBtn').on('click', function () {
-    console.log("Hello World!");
+    //console.log("Hello World!");
  
     //MONDAY OCT 10
     
     var text = $(this).siblings(".description").val();
-    var time = $(this).parent().attr("id");
+     var time = $(this).parent().attr("id");
 //This is where he have to save the text to LocalStorage using "setItem"    
 localStorage.setItem(time,text);
+
+console.log(time)
 
 })
 //WHEN I refresh the page
