@@ -94,9 +94,13 @@ $(document).ready(function(){
     //console.log("Hello World!");
  
     //MONDAY OCT 10
+    var textArea = $(this).siblings(".description")
     
-    var text = $(this).siblings(".description").val();
-     var time = $(this).sibilings(".description").attr("id");
+    var text = textArea.val();
+    var time = textArea.attr("id"); 
+
+    //var text = $(this).siblings(".description").val();
+    // var time = $(this).sibilings(".description").attr("id");
 //This is where he have to save the text to LocalStorage using "setItem"    
 localStorage.setItem(time,text);
 
