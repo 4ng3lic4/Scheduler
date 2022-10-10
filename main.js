@@ -46,7 +46,7 @@ if (9 < moment().hour()) {
 //We are grabbing each text area and finding the id
 $("textarea").each(function () {
     console.log("here is the id")
-   //Using jQuery to change the background color of the elements of the list
+    //Using jQuery to change the background color of the elements of the list
 
     console.log($(this).attr('id'));
     if ($(this).attr('id') < moment().hour()) {
@@ -69,50 +69,47 @@ $("textarea").each(function () {
 
 
 
-
-
-
-//WHEN I click the save button for that timeblock
-//THEN the text for that event is saved in local storage
-
-
-
 //$.fn.saveBtn=function(){
-  //  console.log("Hello World")
+//  console.log("Hello World")
 //}
 
 //10/Function to make sure everything loads properly on the document
 
-$(document).ready(function(){
-
-
-    //WHEN I click into a timeblock
-//THEN I can enter an event
-//Target the id that will store the event /Get values of description in jQuery
+$(document).ready(function () {
+  
+    //Target the id that will store the event /Get values of description in jQuery
 
     $('.saveBtn').on('click', function () {
-    //console.log("Hello World!");
- 
-    //MONDAY OCT 10
-    var textArea = $(this).siblings(".description")
-    
-    var text = textArea.val();
-    var time = textArea.attr("id"); 
+        //console.log("Hello World!");
 
-    //var text = $(this).siblings(".description").val();
-    // var time = $(this).sibilings(".description").attr("id");
-//This is where he have to save the text to LocalStorage using "setItem"    
-localStorage.setItem(time,text);
+        //MONDAY OCT 10
+        var textArea = $(this).siblings(".description")
 
-console.log(time)
+        var time = textArea.attr("id");
+        var text = textArea.val();
 
-})
-//WHEN I refresh the page
-//THEN the saved events persist
-$("#9 .description").val(localStorage.getItem("9"));
-$("#10 .description").val(localStorage.getItem("10"));
+        //This is where he have to save the text to LocalStorage using "setItem"    
+        localStorage.setItem(time, text);
+
+        console.log(time)
+
+const myData = localStorage.getItem(textArea);
+console.log(textArea);
+    })
+    ////////////////////////////
 
 
 
-}); 
+    $("#9 .description").val(localStorage.getItem("9"));
+    $("#10 .description").val(localStorage.getItem("10"));
+    $("#11 .description").val(localStorage.getItem("11"));
+    $("#12 .description").val(localStorage.getItem("12"));
+    $("#13 .description").val(localStorage.getItem("13"));
+    $("#14 .description").val(localStorage.getItem("14"));
+    $("#15 .description").val(localStorage.getItem("15"));
+    $("#16 .description").val(localStorage.getItem("16"));
+    $("#17 .description").val(localStorage.getItem("17"));
+
+
+});
 
