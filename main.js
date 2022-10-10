@@ -111,7 +111,7 @@ console.log(textArea);
     $("#15 .description").val(localStorage.getItem("15"));
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
-    console.log("Hello world");
+    
 
 });
 
