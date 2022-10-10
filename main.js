@@ -9,6 +9,7 @@
 //Variable for the id we want to target
 
 console.log(moment().hour())
+
 var dayDisplay = $('#currentDay');
 
 var currentDateTime = moment();
@@ -42,10 +43,11 @@ if (9 < moment().hour()) {
     firstRow.classList.remove("present");
     firstRow.classList.remove("future");
 }
-//We are grabbing each text are and finding the id
+//We are grabbing each text area and finding the id
 $("textarea").each(function () {
     console.log("here is the id")
-    //To get the text area id we use the attibute method
+   //Using jQuery to change the background color of the elements of the list
+
     console.log($(this).attr('id'));
     if ($(this).attr('id') < moment().hour()) {
         this.classList.add("past");
@@ -70,30 +72,41 @@ $("textarea").each(function () {
 
 
 
-//Using jQuery to change the background color of the elements of the list
-
-
-
-
-
-
-//WHEN I click into a timeblock
-//THEN I can enter an event
-
-
 //WHEN I click the save button for that timeblock
 //THEN the text for that event is saved in local storage
-//function to execure what we tell it
+
 
 
 //$.fn.saveBtn=function(){
   //  console.log("Hello World")
 //}
 
-$('.saveBtn').on('click', function () {
-       //This is where he have to save the text to LocalStorage         
-   console.log("Hello World!");
-}); 
+//10/Function to make sure everything loads properly on the document
 
+$(document).ready(function(){
+
+
+    //WHEN I click into a timeblock
+//THEN I can enter an event
+//Target the id that will store the event /Get values of description in jQuery
+
+    $('.saveBtn').on('click', function () {
+    console.log("Hello World!");
+ 
+    //MONDAY OCT 10
+    
+    var text = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+//This is where he have to save the text to LocalStorage using "setItem"    
+localStorage.setItem(time,text);
+
+})
 //WHEN I refresh the page
 //THEN the saved events persist
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
+
+
+
+}); 
+
