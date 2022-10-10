@@ -95,6 +95,8 @@ $(document).ready(function () {
 
 const myData = localStorage.getItem(textArea);
 console.log(textArea);
+
+
     })
     ////////////////////////////
 
@@ -109,7 +111,9 @@ console.log(textArea);
     $("#15 .description").val(localStorage.getItem("15"));
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
-
+    console.log("Hello world");
 
 });
 
+
+////TEXT ADDED TO SEE WHY F IT GETS UPDATED ON GITHUB
