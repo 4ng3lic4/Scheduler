@@ -96,7 +96,7 @@ $(document).ready(function(){
     //MONDAY OCT 10
     
     var text = $(this).siblings(".description").val();
-     var time = $(this).parent().attr("id");
+     var time = $(this).sibilings(".description").attr("id");
 //This is where he have to save the text to LocalStorage using "setItem"    
 localStorage.setItem(time,text);
 
