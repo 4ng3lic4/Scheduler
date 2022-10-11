@@ -21,18 +21,15 @@ textarea {
   border-bottom: 10px solid black;
 }
 
-/*Created by me*/
+
 .container{
   padding: 0%;
   border-style:solid black ;
- /* background-color: cornflowerblue ;*/
+ 
 }
-/****/
-
 
 .description {
   white-space: pre-wrap;
- 
 }
 
 .time-block {

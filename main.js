@@ -8,8 +8,6 @@
 
 //Variable for the id we want to target
 
-
-
 console.log(moment().hour())
 
 var dayDisplay = $('#currentDay');
@@ -24,18 +22,9 @@ dayDisplay.text(currentDateTime.format("dddd, MMMM Do"));
 
 //WHEN I scroll down
 //THEN I am presented with timeblocks for standard business hours
-
-//Code to get the id
-//$('#').click(function(e){
-//  alert(e.currentTarget.id);
-//}); 
-
-
-
 //WHEN I view the timeblocks for that day
 //THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 
-//The classes are ALREADY created with the background color .past .present .future
 
 var firstRow = document.getElementById("9");
 
@@ -71,22 +60,16 @@ $("textarea").each(function () {
 
 
 
-//$.fn.saveBtn=function(){
-//  console.log("Hello World")
-//}
-
-//10/Function to make sure everything loads properly on the document
+//Function to make sure everything loads properly on the document
 
 $(document).ready(function () {
 
     //Target the id that will store the event /Get values of description in jQuery
-
     $('.saveBtn').on('click', function () {
         //console.log("Hello World!");
 
-        //MONDAY OCT 10
+  
         var textArea = $(this).siblings(".description")
-
         var time = textArea.attr("id");
         var text = textArea.val();
 
@@ -94,13 +77,7 @@ $(document).ready(function () {
         localStorage.setItem(time, text);
 
         console.log(time)
-
-
-
     })
-    ////////////////////////////Fix LocalStorage update
-
-
 
     $("#9 ").val(localStorage.getItem("9"));
     $("#10 ").val(localStorage.getItem("10"));
@@ -112,8 +89,7 @@ $(document).ready(function () {
     $("#16 ").val(localStorage.getItem("16"));
     $("#17 ").val(localStorage.getItem("17"));
 
-
 });
 
 
-////TEXT ADDED TO SEE WHY  IT GETS UPDATED ON GITHUB
+
